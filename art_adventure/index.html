@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<!-- start global site tag -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54267564-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54267564-2');
+</script>
+<!-- end global site tag -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Art Adventure</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+     --><!-- <link rel="stylesheet" href="style.css" type="text/css">
+     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+    <!-- <script type='text/javascript' src='js/js.js'></script>
+     -->
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+
+<style type="">
+	body {
+ 
+    background-color:#232323;
+	}
+  #wrap {
+    background: url('img/greenRoom.jpg') no-repeat 0 0 transparent;
+    background-size:100%;
+    max-width:1000px;
+    height:600px;
+    margin:0 auto;
+    width:100%;
+    position: relative;
+  }
+
+  .center {
+    text-align: center;
+    color:yellow;
+  }
+  a {
+    color:hotpink;
+  }
+  a:hover {
+
+  }
+  .home_btn {
+    background:limegreen;
+    color:red;
+    padding:20px;
+    border:3px dashed purple;
+    display:block;
+    max-width:200px;
+    margin:30px auto;
+  }
+  @media (max-width:753px) {
+    .video {
+      position: relative;
+      margin:30px auto;
+      max-width:300px;
+      width:100%;
+      display:block;
+      top:auto;
+      right:auto;
+    }
+  }
+.inner {
+
+}  
+/* pw door */
+.lockeddoor {
+  background: url('img/lockeddoor.png');
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  top: 213px;
+  left: 240px;
+  z-index:9;
+  border:2px dashed red;
+}
+
+.apwdoor {
+  background: url('img/pwdoor.png');
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  top: 213px;
+  left: 240px;
+}
+
+
+
+/* door stairs */
+.doorstairs,
+.unlockeddoorstairs {
+  background: blue;
+  background: url('img/lockeddoor.png');
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  top: 213px;
+  left: 240px;
+  z-index:9;
+}
+.unlockeddoorstairs {
+  background:#fff;
+  z-index:8;
+}
+
+a {
+  cursor: pointer;
+}
+.lockeddoor {
+
+}
+.key {
+  background:yellow;
+  width:20px;
+  height:20px;
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+
+
+
+.painting {
+    width:100px;
+    height:130px;
+    /*background:   lime;*/
+    top:200px;
+    left:45px;
+}
+
+/* global */
+.posa {position:  absolute; }
+</style>
+<div id="wrap">
+  <div class="inner">
+    <a class="key"></a>
+    <a class="pwdoor"></a>
+    <a class="doorstairs"></a>
+    <a class="unlockeddoorstairs"></a>
+    <a class="posa painting"></a>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  $(".doorstairs").click(function(){
+    alert('this door is locked');
+  });
+  $(".key").click(function() {
+    alert('door unlocked!');
+    $(".key,.doorstairs").fadeOut();
+  })
+  $(".unlockeddoorstairs").click(function(){
+      location.href='http://www.google.com';
+  });
+  // painting
+  $('.painting').click(function() {
+      alert('this is a painting')
+  });
+</script>
+
+<!-- 
+todo:
+hide key
+better graphics
+
+password door visual/a
+password functionality
+on submit of successful pw go to new page
+
+NEW PAGES
+upstairs door goes to 
+NEW LEVEL A
+
+PW door goes to
+NEW LEVEL B
+
+other clickables
+PICTURE FRAME - new tab with that graphic
+POT - ?
+Bushes - ? 
+totem/beehive/columns - ?
+
+
+
+
+COnsider combo (123) pw at some point
+ -->
+
+</body>
+</html>
