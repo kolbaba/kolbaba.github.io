@@ -185,12 +185,11 @@
        <script>
       function checkPassword(){
        if(document.getElementById('password').value == 'h'){
-            //alert('Correct Password!'); 
+            alert('Correct Password! But i dont know how to get it to hide #pwdoor!!!!!'); 
             // location.href="http://google.com";
             
          
-              var element = document.getElementById("pwdoor");
-              element.classList.add("hideme");
+           
        
          
          } else {
@@ -213,6 +212,10 @@
   <!-- </div> -->
 </div>
 <script type="text/javascript">
+  
+  $('#wrap').hide().delay(5000).fadeIn();
+
+
   $(".doorstairs").click(function(){
     alert('this door is locked');
   });
