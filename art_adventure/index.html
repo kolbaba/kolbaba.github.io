@@ -151,69 +151,16 @@
     .posa {position:  absolute; }
     .hideme {display:none;}
 </style>
-
 <div id="wrap">
-  <!-- <div class="inner"> -->
-    <div class="passwordbox">
-        <div class="wrapper">
-
-
-
-            <form method="POST" class="form1" onsubmit="return checkPassword();  return false;">
-                <div class="formtitle">
-                    Enter the password to proceed
-                </div>
-                <br><br>
-                <div class="input nobottomborder">
-                    <div class="inputtext">
-                        Password Here:
-                    </div>
-                    <br>
-                    <div class="inputcontent">
-                        <input type="password" id="password" /><br />
-                    </div>
-                </div>
-                <br>
-                <div class="buttons">
-                    <input class="orangebutton" type="submit" value="Submit"  />
-                </div>
-            </form>
-            <br><br>
-            <a href="#" class="close">CLOSE</a>
-        </div>
-
-       <script>
-      function checkPassword(){
-       if(document.getElementById('password').value == 'h'){
-            alert('Correct Password! But i dont know how to get it to hide #pwdoor!!!!!'); 
-            // location.href="http://google.com";
-            
-         
-           
-       
-         
-         } else {
-         alert('Wrong Password!');
-          return false;
-        }
-       }
-      </script>
-
-
-
-
-    </div>
     <a class="key"></a>
-    <a id="pwdoor" class="posa pwdoor"></a>
     <a class="doorstairs"></a>
     <a class="unlockeddoorstairs"></a>
     <a class="posa painting"></a>
     <a class="paintinglg"></a>
-  <!-- </div> -->
 </div>
 <script type="text/javascript">
   
-  $('#wrap').hide().delay(5000).fadeIn();
+  $('#wrap').hide().delay(1000).fadeIn();
 
 
   $(".doorstairs").click(function(){
@@ -238,14 +185,7 @@
   $('.paintinglg').click(function() {
       $(this).fadeOut();
   });
-  // Password box
-  $('.passwordbox').hide();
-  $('.pwdoor').click(function() {
-        $('.passwordbox').fadeIn()
-        $('.close').click(function() {
-            $('.passwordbox').fadeOut();            
-        });
-  });
+
 
 </script>
 <!-- 
