@@ -8,7 +8,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-54267564-2');
 </script>
 <!-- end global site tag -->
@@ -56,14 +55,20 @@
         <h3>Contact Me</h3>
         <p>For availability and all other inquiries, <a href="https://forms.gle/ybLicivGwqN79rnk7" target="_blank">send me a message.</a> </p>
         <hr>
-        <p><strong>More:</strong></p>
+        <h2>Web Development and Design Links</h2>
         <ul>
           <li><a href="https://profile.indeed.com/p/jordan-kolbaba">Resume</a></li>
           <li><a href="https://github.com/kolbaba/">Github</a></li>
           <li><a href="https://www.linkedin.com/in/jordankolbaba">LinkedIn</a></li>
-          <li style="display:none;"><a href="https://www.flickr.com/photos/jordankolbaba/">Art</a></li>
-          <li style="display:none;"><a href="https://modbom.bandcamp.com/"></a>Music</li>
-          <li style="display:none;"><a href="https://www.youtube.com/channel/UC94xPqdB1uGLfkkoO3nOp-g">YouTube</a></li>
+        </ul>
+        <b></b>
+        <h2 style="display:none;" class="show">Music, Art, Personal Links</h2>
+        <ul>
+          <li style="display:none;" class="show"><a href="https://www.flickr.com/photos/jordankolbaba/">Art</a></li>
+          <li style="display:none;" class="show"><a href="https://modbom.bandcamp.com/"></a>Bandcamp</li>
+          <li style="display:none;" class="show"><a href="https://soundcloud.com/mod_bom"></a>Soundcloud</li>
+          <li style="display:none;" class="show"><a href="https://open.spotify.com/artist/0HkKbvbJkzYubhWXyHJmoS"></a>Spotify</li>
+          <li style="display:none;" class="show"><a href="https://www.youtube.com/channel/UC94xPqdB1uGLfkkoO3nOp-g">YouTube</a></li>
         </ul>
         <br>
         <hr>
@@ -91,5 +96,18 @@
     </div>
   </section>
   <footer></footer>
+  <script>
+    $j=jQuery.noConflict(); // jQuery noConflict mode
+ 
+    $j(document).ready(function() { // Initialise when the DOM is ready
+      
+        if (window.location.href.indexOf("?a") > -1) { // If the last part of the url is '/colours/'
+            $j('body').addClass('all'); // Add body class
+        } else {
+            $j('body').addClass('pro'); // Otherwise, add a different class
+        }
+      
+    });
+  </script>
 </body>
 </html>
